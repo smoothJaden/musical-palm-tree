@@ -1,7 +1,7 @@
 # PromptHub Protocol
 
 <div align="center">
-  <img src="" alt="PromptHub Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/smoothJaden/prompthub-protocol/refs/heads/main/img/The_logo_consists_of_an_abstract_stylized_shape_wi.png" alt="PromptHub Logo" width="200"/>
   <h2>The Next-Generation AI Asset Protocol on Blockchain</h2>
   <h4>Unleashing Prompt Potential, Pioneering the AI Economic Revolution</h4>
 

@@ -614,7 +614,7 @@ The PromptHub protocol is licensed under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Website**: [https://prompthub.xyz](https://prompthub.xyz)
+- **Website**: [https://prompthub3.com](https://prompthub3.com)
 - **GitHub**: [https://github.com/smoothJaden/prompthub-protocol](https://github.com/smoothJaden/prompthub-protocol)
 - **X / Twitter**: [@prompthub3](https://x.com/prompthub3)
 - **Email**: prompthub3@gmail.com

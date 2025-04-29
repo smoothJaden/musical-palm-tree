@@ -12,8 +12,6 @@
   [![Solana](https://img.shields.io/badge/solana-1.14-purple.svg)](https://solana.com)
   [![Discord](https://img.shields.io/discord/1234567890?color=7389D8&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/prompthub)
   [![Twitter Follow](https://img.shields.io/twitter/follow/PromptHub?style=social)](https://x.com/prompthub3)
-    [![Solana](https://img.shields.io/twitter/follow/PromptHub?style=social)](https://solana.com)
-
 </div>
 
 ## 📚 Table of Contents

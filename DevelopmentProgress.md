@@ -106,15 +106,15 @@ We've established the following development sequence:
 
 | Milestone | Target Date | Status | Dependencies |
 |-----------|-------------|--------|--------------|
-| Project Kickoff | April 28, 2023 | ✅ | None |
-| Documentation Structure Complete | April 29, 2023 | ✅ | None |
-| Frontend Framework Selection | May 5, 2023 | ⏳ | None |
-| Homepage Live | May 15, 2023 | 🔜 | Frontend Framework |
-| Protocol Alpha Release | June 15, 2023 | 🔜 | None |
-| SDK Alpha Release | July 10, 2023 | 🔜 | Protocol Alpha |
-| Frontend Beta | August 15, 2023 | 🔜 | SDK Alpha |
-| TestNet Launch | September 20, 2023 | 🔜 | All Components Alpha |
-| MainNet Launch | November 1, 2023 | 🔜 | TestNet Validation |
+| Project Kickoff | April 28, 2025 | ✅ | None |
+| Documentation Structure Complete | April 29, 2025 | ✅ | None |
+| Frontend Framework Selection | May 5, 2025 | ⏳ | None |
+| Homepage Live | May 15, 2025 | 🔜 | Frontend Framework |
+| Protocol Alpha Release | June 15, 2025 | 🔜 | None |
+| SDK Alpha Release | July 10, 2025 | 🔜 | Protocol Alpha |
+| Frontend Beta | August 15, 2025 | 🔜 | SDK Alpha |
+| TestNet Launch | September 20, 2025 | 🔜 | All Components Alpha |
+| MainNet Launch | November 1, 2025 | 🔜 | TestNet Validation |
 
 ## Resource Allocation
 
@@ -147,13 +147,13 @@ We've established the following development sequence:
 
 ## Meeting Notes
 
-### Project Kickoff - April 28, 2023
+### Project Kickoff - April 28, 2025
 - Agreed on development sequence strategy
 - Established documentation structure
 - Created initial repositories
 - Discussed technology stack options
 
-### Technical Planning - April 29, 2023
+### Technical Planning - April 29, 2025
 - Decided to start with 10% of frontend development
 - Established four-phase development approach
 - Created this progress tracking document

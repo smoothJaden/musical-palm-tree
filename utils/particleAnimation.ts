@@ -1,6 +1,4 @@
-/**
- * Particle animation configuration options interface
- */
+
 export interface ParticleAnimationOptions {
   /** Number of particles */
   particleCount?: number;

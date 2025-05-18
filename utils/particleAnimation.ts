@@ -4,7 +4,6 @@ export interface ParticleAnimationOptions {
   particleCount?: number;
   /** Particle color (RGBA format) */
   color?: string;
-  /** Whether to draw connection lines between particles */
   connect?: boolean;
   /** Minimum particle size (pixels) */
   minSize?: number;

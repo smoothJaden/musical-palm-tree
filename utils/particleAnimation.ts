@@ -21,48 +21,10 @@ export interface ParticleAnimationOptions {
 
 /**
  * Initialize moving particle animation on grid background
- * @returns Cleanup function to be called when component unmounts
  */
-function initParticleAnimation(
-  container: HTMLElement, 
-  options: ParticleAnimationOptions = {}
-): () => void {
-  if (!container) return () => {};
-  
-  const {
-    particleCount = 30,
-    color = 'rgba(0, 211, 217, 0.6)',
-    connect = true,
-    minSize = 2,
-    maxSize = 5,
-    minSpeed = 0.05,
-    maxSpeed = 0.15,
-    connectionDistance,
-    connectionOpacity = 0.2
-  } = options;
-  
-  const particles: HTMLDivElement[] = [];
-  
-  // Clear container
-  container.innerHTML = '';
-  
+
   // Create particles
-  for (let i = 0; i < particleCount; i++) {
-    const particle = document.createElement('div');
-    particle.classList.add('moving-dot');
-    
-    // Random position
-    const x = Math.random() * 100;
-    const y = Math.random() * 100;
-    
-    // Random speed (slow movement)
-    const speedX = (Math.random() - 0.5) * (maxSpeed - minSpeed) + minSpeed;
-    const speedY = (Math.random() - 0.5) * (maxSpeed - minSpeed) + minSpeed;
-    
-    // Random size and opacity
-    const size = Math.random() * (maxSize - minSize) + minSize;
-    const opacity = Math.random() * 0.4 + 0.1;
-    
+
     // Set styles
     particle.style.cssText = `
       position: absolute;
@@ -119,6 +81,23 @@ function initParticleAnimation(
     }
   }
   
+
+    for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('moving-dot');
+    
+    // Random position
+    const x = Math.random() * 100;
+    const y = Math.random() * 100;
+    
+    // Random speed (slow movement)
+    const speedX = (Math.random() - 0.5) * (maxSpeed - minSpeed) + minSpeed;
+    const speedY = (Math.random() - 0.5) * (maxSpeed - minSpeed) + minSpeed;
+    
+    // Random size and opacity
+    const size = Math.random() * (maxSize - minSize) + minSize;
+    const opacity = Math.random() * 0.4 + 0.1;
+    
   // Animation function
   let animationId: number | null = null;
   

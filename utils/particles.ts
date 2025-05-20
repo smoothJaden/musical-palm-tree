@@ -3,15 +3,6 @@
  * For generating background particle animation effects
  */
 
-interface Particle {
-  x: number;
-  y: number;
-  size: number;
-  speedX: number;
-  speedY: number;
-  color: string;
-  element: HTMLDivElement;
-}
 
 interface ParticlesOptions {
   container: HTMLElement;
@@ -114,6 +105,17 @@ export class ParticlesEffect {
         particleElement.style.transform = 'scale(1)';
       }, 50 * i);
     }
+
+    interface Particle {
+  x: number;
+  y: number;
+  size: number;
+  speedX: number;
+  speedY: number;
+  color: string;
+  element: HTMLDivElement;
+}
+
   }
 
   private removeAllParticles(): void {
@@ -165,12 +167,19 @@ export class ParticlesEffect {
     if (this.options.connectParticles) {
       this.connectParticles();
     }
+
+    
     
     // If still animating, request next frame
     if (this.isAnimating) {
       this.rafId = requestAnimationFrame(this.update);
     }
   };
+
+   private random(min: number, max: number): number {
+    return Math.random() * (max - min) + min;
+  }
+
 
   private connectParticles(): void {
     // Remove existing connection lines

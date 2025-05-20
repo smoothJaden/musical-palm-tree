@@ -21,8 +21,6 @@ export interface ParticleAnimationOptions {
 
 /**
  * Initialize moving particle animation on grid background
- * @param container - Particle container element
- * @param options - Configuration options
  * @returns Cleanup function to be called when component unmounts
  */
 function initParticleAnimation(

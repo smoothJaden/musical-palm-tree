@@ -182,7 +182,6 @@ export class ParticlesEffect {
 
 
   private connectParticles(): void {
-    // Remove existing connection lines
     const existingLines = this.container.querySelectorAll('.particle-line');
     existingLines.forEach(line => line.remove());
     
@@ -197,7 +196,6 @@ export class ParticlesEffect {
         const dy = p1.y + p1.size / 2 - (p2.y + p2.size / 2);
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        // If distance is less than set value, draw connection line
         if (distance < this.options.connectDistance) {
           // Calculate opacity, more distant = more transparent
           const opacity = 1 - distance / this.options.connectDistance;

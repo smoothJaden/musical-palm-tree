@@ -86,7 +86,6 @@ export interface ParticleAnimationOptions {
     const particle = document.createElement('div');
     particle.classList.add('moving-dot');
     
-    // Random position
     const x = Math.random() * 100;
     const y = Math.random() * 100;
     

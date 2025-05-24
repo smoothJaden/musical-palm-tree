@@ -181,7 +181,15 @@ export class ParticlesEffect {
   }
 
 
-  private connectParticles(): void {
+ 
+
+
+
+
+
+
+
+   private connectParticles(): void {
     const existingLines = this.container.querySelectorAll('.particle-line');
     existingLines.forEach(line => line.remove());
     

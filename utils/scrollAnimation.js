@@ -3,26 +3,6 @@
  * For detecting when elements enter the viewport and triggering animations
  */
 
-/**
- * Determine if an element has entered the viewport
- * @param {HTMLElement} element - DOM element to check
- * @param {number} threshold - Viewport entry threshold ratio, default 0.2 (20%)
- * @returns {boolean} - Whether the element is in the viewport
- */
-export const isElementInViewport = (element, threshold = 0.2) => {
-  if (!element) return false;
-  
-  const rect = element.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-  // Modified detection logic to lower the threshold for element visibility
-  // Start animation as soon as element top enters viewport
-  const vertInView = rect.top <= windowHeight * 0.9;
-  
-  console.log(`Element visibility check: ${vertInView ? 'visible' : 'not visible'} (top: ${rect.top}, windowHeight: ${windowHeight})`);
-  
-  return vertInView;
-};
 
 /**
  * Initialize scroll monitoring to add animation classes to elements entering viewport
@@ -117,3 +97,25 @@ export const initSectionAnimation = (containerSelector, viewClass = 'in-view', t
     console.log('Removed section event listeners');
   };
 }; 
+
+
+/**
+ * Determine if an element has entered the viewport
+ * @param {HTMLElement} element - DOM element to check
+ * @param {number} threshold - Viewport entry threshold ratio, default 0.2 (20%)
+ * @returns {boolean} - Whether the element is in the viewport
+ */
+export const isElementInViewport = (element, threshold = 0.2) => {
+  if (!element) return false;
+  
+  const rect = element.getBoundingClientRect();
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  
+  // Modified detection logic to lower the threshold for element visibility
+  // Start animation as soon as element top enters viewport
+  const vertInView = rect.top <= windowHeight * 0.9;
+  
+  console.log(`Element visibility check: ${vertInView ? 'visible' : 'not visible'} (top: ${rect.top}, windowHeight: ${windowHeight})`);
+  
+  return vertInView;
+};

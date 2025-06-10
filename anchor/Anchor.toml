@@ -1,0 +1,66 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+prompt_vault = "PromptVau1t11111111111111111111111111111111"
+prompt_token = "PromptTok3n111111111111111111111111111111111"
+prompt_nft = "PromptNFT111111111111111111111111111111111111"
+prompt_dao = "PromptDAO111111111111111111111111111111111111"
+prompt_sig = "PromptSig111111111111111111111111111111111111"
+prompt_router = "PromptRout3r11111111111111111111111111111111"
+
+[programs.devnet]
+prompt_vault = "PromptVau1t11111111111111111111111111111111"
+prompt_token = "PromptTok3n111111111111111111111111111111111"
+prompt_nft = "PromptNFT111111111111111111111111111111111111"
+prompt_dao = "PromptDAO111111111111111111111111111111111111"
+prompt_sig = "PromptSig111111111111111111111111111111111111"
+prompt_router = "PromptRout3r11111111111111111111111111111111"
+
+[programs.mainnet]
+prompt_vault = "PromptVau1t11111111111111111111111111111111"
+prompt_token = "PromptTok3n111111111111111111111111111111111"
+prompt_nft = "PromptNFT111111111111111111111111111111111111"
+prompt_dao = "PromptDAO111111111111111111111111111111111111"
+prompt_sig = "PromptSig111111111111111111111111111111111111"
+prompt_router = "PromptRout3r11111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 5000
+shutdown_wait = 2000
+upgradeable = false
+
+[[test.genesis]]
+address = "PromptVau1t11111111111111111111111111111111"
+program = "target/deploy/prompt_vault.so"
+
+[[test.genesis]]
+address = "PromptTok3n111111111111111111111111111111111"
+program = "target/deploy/prompt_token.so"
+
+[[test.genesis]]
+address = "PromptNFT111111111111111111111111111111111111"
+program = "target/deploy/prompt_nft.so"
+
+[[test.genesis]]
+address = "PromptDAO111111111111111111111111111111111111"
+program = "target/deploy/prompt_dao.so"
+
+[[test.genesis]]
+address = "PromptSig111111111111111111111111111111111111"
+program = "target/deploy/prompt_sig.so"
+
+[[test.genesis]]
+address = "PromptRout3r11111111111111111111111111111111"
+program = "target/deploy/prompt_router.so"

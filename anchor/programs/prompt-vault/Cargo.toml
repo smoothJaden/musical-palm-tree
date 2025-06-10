@@ -1,0 +1,26 @@
+[package]
+name = "prompt-vault"
+version = "0.1.0"
+description = "PromptHub Vault - Core prompt registry and lifecycle management"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "prompt_vault"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+solana-program = { workspace = true }
+spl-token = { workspace = true }
+spl-associated-token-account = { workspace = true }
+borsh = { workspace = true }
+sha2 = { workspace = true }
+bs58 = { workspace = true } 
